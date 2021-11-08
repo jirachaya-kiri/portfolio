@@ -10,8 +10,8 @@ h1 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: .4em;
     font-weight: 300;
-    line-height: 1;
-    font-size: 24px;
+    line-height: 1.5;
+    font-size: 20px;
     color: #6968A6;
 }
 h2 {
@@ -124,7 +124,7 @@ a {
 #tagline {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     z-index: 4;
     text-shadow: 0 0 15px #1E067D;
@@ -154,6 +154,7 @@ a {
     width: 1100px;
     transition: 0.2s;
     max-width: 100%;
+    border-radius: 4px;
 }
 .featured-proj-img:hover {
     filter: drop-shadow(0px 0px 10px #bfbff1);
@@ -178,6 +179,7 @@ a {
     width: 525px;
     transition: 0.2s;
     max-width: 100%;
+    border-radius: 4px;
 }
 .etc-proj-img:hover {
     filter: drop-shadow(0px 0px 6px #bfbff1);
@@ -383,6 +385,7 @@ a {
     max-height: 400px;
     max-width: 100%;
     animation: fadeIn 0.2s 1;
+    border-radius: 4px;
 }
 .padding-top {
     padding-top: 30px;
