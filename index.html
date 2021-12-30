@@ -13,79 +13,126 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/vjr8rbt.css"> 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <div id="top-color"></div>
     <div id="navbar">
-        <img id="navbar-background" src="assets/images/navbar ellipse.png" />
         <div id="navbar-text">
             <a href="index.html" class="nav-item">work</a>
             <a href="about.html" class="nav-item">about</a>
             <a href="assets/images/Sept 2021 Resume.pdf" class="nav-item" download>resume</a>
         </div>    
     </div>
-    <div id="background-images">
+        <div id="intro-text">
+            <p class="name" id="ji">jirachaya</p>
+            <p class="name" class="hidden" id="ki">kiriruangchai</p>
+            <img id="left-arrow" src="assets/images/left arrow.svg" />
+            <img id="right-arrow" src="assets/images/right arrow.svg" />
+            <p class="pronunciation " id="pronunc-ji">ji-ruh-chai-yuh</p>
+            <p class="pronunciation " id="pronunc-ki">ki-ree-rung-chai</p>
+        </div>
+    <div>
         <!--<img id="night-sky" src="assets/images/night-sky.png" alt=""/>-->
-        <img id="night-sky" src="assets/images/night sky.png" alt=""/>
-        <img id="circle" src="assets/images/circle frame.png" alt=""/>
-        <img id="light-shape" src="assets/images/light shape frame.png" alt=""/>
+        <!-- <img id="night-sky" src="assets/images/night sky.png" alt=""/> -->
+        <!-- <img id="circle" src="assets/images/circle frame.png" alt=""/> -->
+        <!-- <img id="light-shape" src="assets/images/light shape frame.png" alt=""/> -->
     </div>
-    <div id="name-and-tagline">
-        <p id="name">Jirachaya Kiriruangchai</p>
-        <p id="tagline">UX/UI  |  Graphic Design  | Illustration</p>    
+    <!--<div id="name-and-tagline">
+        <p id="name">jirachaya</p>
+        <p id="tagline">Product designer</p>   --> 
     </div>
     <!--HOME TILES START-->
     <div id="home-page-content">
-        <h1 data-aos="fade-in" >FEATURED WORK</h1>
+        <!-- <h1 data-aos="fade-in" >FEATURED WORK</h1> -->
         <div id="featured-projects-section">
+            <!-- GIG -->
             <div data-aos="fade-in" class="featured-project-tile">
-                <a href="divide.html"><img class="featured-proj-img" src="assets/images/divide.jpg" alt="Mockups of the Divide extension on a phone" /></a>
-                <h2>Divide</h2>
-                <h3>UX/UI case study | Personal project</h3>
+                <div class="proj-img-container">
+                    <a href="gig.html"><img class="featured-proj-img" src="assets/images/gig home.jpg" alt="Mockups of the Divide extension on a phone" /></a>
+                </div>
+                <div class="tile-text">
+                    <h2>Gig Carshare</h2>
+                    
+                    <p class="caption-text">Reducing non-urgent calls through a new feature: auto-extending pickup time.</p>
+                    <h3>Product design | Client work</h3>
+                </div>
+            </div>
+            <!-- DIVIDE -->
+            <div data-aos="fade-in" class="featured-project-tile">
+                <div class="proj-img-container">
+                    <a href="divide.html"><img class="featured-proj-img" src="assets/images/divide home.jpg" alt="Mockups of the Divide extension on a phone" /></a>
+                </div>
+                <div class="tile-text">
+                    <h2>Divide</h2>
+                    
+                    <p class="caption-text">Helping people limit social media use and regain control of their free time.</p>
+                    <h3>UX/UI case study | Personal project</h3>
+                </div>
+            </div>
+            <!-- VOM -->
+            <div data-aos="fade-in" class="featured-project-tile">
+                <a href="vom.html"><img class="featured-proj-img" src="assets/images/vom home.jpg" alt="Images of Voices of Music website pages on desktop and mobile"/></a>
+                <div class="tile-text">
+                    <h2>Voices of Music</h2>
+                    <p class="caption-text">I redesigned the website of an early music non-profit organization.</p>
+                    <h3>Web design | Client work</h3>
+                </div>
+            </div>
+            <!-- DONUTS -->
+            <div data-aos="fade-in" class="featured-project-tile">
+                <img id="no-hover" class="featured-proj-img" src="assets/images/donuts home.jpg" alt="Page coming soon. A mockup of the Kingpin Donuts website"/>
+                <div class="tile-text">
+                    <h2>Kingpin Donuts</h2>
+                    <h3>Website redesign | Class project</h3>
+                </div>
+                
+            </div>
+            <!-- DREAMS -->
+            <div data-aos="fade-in" class="featured-project-tile">
+                <img id="no-hover" class="featured-proj-img" src="assets/images/dreams home.jpg" alt="Page coming soon. Mockups of the dream app journal"/>
+                <div class="tile-text">
+                    <h2>Dream Journal App</h2>
+                    <h3>UX/UI app mockups | Personal project</h3>
+                </div>
+            </div>
+            
+        </div>
+        <!--<h1 data-aos="fade-in">graphic design and illustration</h1>
+        <div id="etc-projects-section">
+            <div data-aos="fade-in" class="featured-project-tile">
+                <a href="city.html"><img class="featured-proj-img" src="assets/images/city.jpg" alt="Three posters from my City of Albany job"/></a>
+                <div class="tile-text">
+                    <h2>City of Albany posters</h2>
+                    <h3>Graphic design | Job</h3>
+                </div>
             </div>
             <div data-aos="fade-in" class="featured-project-tile">
-                <a href="vom.html"><img class="featured-proj-img" src="assets/images/vom website.jpg" alt="Images of Voices of Music website pages on desktop and mobile"/></a>
-                <h2>Voices of Music</h2>
-                <h3>Website redesign | Client work</h3>
+                <a href="art.html"><img class="featured-proj-img" src="assets/images/art.jpg" alt="An acyrlic painting of a dog and a digital painting of a person on a throne with skunks"/></a>
+                <div class="tile-text">
+                    <h2>Art & Illustration</h2>
+                    <h3>Visual art | Hobby</h3>
+                </div>
                 
             </div>
             
-        </div>
-        <h1 data-aos="fade-in">ETC.</h1>
-        <div id="etc-projects-section">
-            <div data-aos="fade-in" class="etc-project-tile">
-                <a href="city.html"><img class="etc-proj-img" src="assets/images/city.jpg" alt="Three posters from my City of Albany job"/></a>
-                <h2>City of Albany posters</h2>
-                <h3>Graphic design | Job</h3>
-            </div>
-            <div data-aos="fade-in" class="etc-project-tile">
-                <a href="art.html"><img class="etc-proj-img" src="assets/images/art.jpg" alt="An acyrlic painting of a dog and a digital painting of a person on a throne with skunks"/></a>
-                <h2>Art & Illustration</h2>
-                <h3>Visual art | Hobby</h3>
-            </div>
-            <div data-aos="fade-in" class="etc-project-tile">
-                <img id="no-hover" class="etc-proj-img" src="assets/images/donuts.jpg" alt="Page coming soon. A mockup of the Kingpin Donuts website"/>
-                <h2>Kingpin Donuts</h2>
-                <h3>Website redesign | Class project</h3>
-            </div>
-            <div data-aos="fade-in" class="etc-project-tile">
-                <img id="no-hover" class="etc-proj-img" src="assets/images/dream.jpg" alt="Page coming soon. Mockups of the dream app journal"/>
-                <h2>Dream Journal App</h2>
-                <h3>UX/UI app mockups | Personal project</h3>
-            </div>
             
             
-        </div>
+        </div>-->
         <!--BOTTOM BAR-->
         <div id="bottom-bar">
-            <img id="bottom-bar-background" src="assets/images/bottom ellipse.png" alt=""/>
+            <!-- <img id="home-bottom-bar-background" src="assets/images/bottom ellipse.png" alt=""/> -->
+            <div id="home-bottom-bar-background">
             <div id="bottom-bar-content">
-                <p class="bottom-bar-text bottom-chapman">get in touch at</p>
+                <p class="bottom-bar-text bottom-serif">get in touch at</p>
                 <p class="bottom-bar-text">jirachaya.kiri@berkeley.edu</p>
                 <p class="bottom-bar-text bottom-small">I designed and coded this website from scratch.</p>
-            </div> 
+            </div>
+        </div> 
         </div>       
     </div>
     <script src="assets/js/script.js"></script>
