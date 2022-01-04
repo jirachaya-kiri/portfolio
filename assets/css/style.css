@@ -19,7 +19,7 @@ body {
     background:#F1E4D5;
 }
 .name {
-    font-family: "cormorant-garamond";
+    font-family: "cormorant-garamond", serif;
     font-style: normal;
     font-weight: 200;
     margin: 0px;
@@ -115,7 +115,7 @@ body {
     animation: fadeIn 1.25s ease 1.2s 1 forwards;
 }
 h1 {
-    font-family: 'cormorant garamond', sans-serif;
+    font-family: 'cormorant-garamond', serif;
     margin-top: 80px;
     font-weight: 200;
     line-height: 1.5;
@@ -124,7 +124,7 @@ h1 {
 }
 h2 {
     margin: 0 0 16px 0;
-    font-family: 'cormorant garamond', sans-serif;
+    font-family: 'cormorant-garamond', serif;
     font-weight: 300;
     font-size: 36px;
     line-height: 1;
@@ -141,7 +141,7 @@ h3 {
 }
 .caption-text {
     font-size: 16px;
-    font-family: 'stevie sans', serif;
+    font-family: 'stevie sans', sans-serif;
     font-weight: 200;
     color: #000000;
     line-height: 1.5;
@@ -206,7 +206,7 @@ a {
     z-index: 11;
 }
 .nav-item {
-    font-family: 'cormorant garamond', serif;
+    font-family: 'cormorant-garamond', serif;
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
@@ -372,7 +372,7 @@ a {
     opacity: 0.7;
 }
 .bottom-serif {
-    font-family: 'cormorant garamond', serif;
+    font-family: 'cormorant-garamond', serif;
     font-size: 22px;
     line-height: 1;
 }
@@ -418,7 +418,7 @@ a {
     margin-bottom: 60px;
 }
 .page-title {
-    font-family: 'cormorant garamond', serif;
+    font-family: 'cormorant-garamond', serif;
     font-weight: 200;
     font-style: normal;
     font-size: 36px;
@@ -510,8 +510,6 @@ a {
     height: 100%;
     max-height: 470px;
     margin-top: 60px;
-    object-fit: contain;
-    overflow: hidden;
 }
 @media screen and (max-width: 600px) {
     .single-screen {
@@ -545,12 +543,16 @@ a {
     #right-arrow {
         display: none;
     }
+    .text-section-rows {
+        flex-wrap: wrap;
+    }
 }
 
 .small {
     margin-left: -10px;
     height: 450px;
     margin-bottom: -20px;
+    margin-top: 20px;
 }
 #problem-sequence-margin {
     margin-top: 60px;
@@ -576,10 +578,21 @@ a {
     gap: 5%;
     width: 700px;
     max-width: 90%;
-    flex-wrap: wrap;
+    flex-wrap: none;
 }
 .third {
     width: 230px;
+}
+.rows-no-wrap {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    flex-direction: row;
+    gap: 5%;
+    width: 1000px;
+    max-width: 90%;
+    flex-wrap: none;
 }
 .align-center {
     align-items: center;
