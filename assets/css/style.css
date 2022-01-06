@@ -101,7 +101,7 @@ body {
     }
 }
 .pronunciation {
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-size: 16px;
     font-weight: 200;
     color: #575050;
@@ -141,7 +141,7 @@ h2 {
 }
 h3 { 
     margin: 10px 0 0 0;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     letter-spacing: .02em;
     font-weight: 300;
     font-size: 14px;
@@ -150,7 +150,7 @@ h3 {
 }
 .caption-text {
     font-size: 16px;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 200;
     color: #000000;
     line-height: 1.5;
@@ -233,7 +233,7 @@ a {
 }
 
 #tagline {
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: black;
@@ -362,7 +362,7 @@ a {
     color: #371A2E;
     margin-bottom: -10px;
     font-size: 14px;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -447,7 +447,7 @@ a {
 }
 .page-tagline {
     margin: 10px 0 0 0;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1;
@@ -455,7 +455,7 @@ a {
 }
 .page-text {
     margin-top: 30px;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
@@ -466,7 +466,7 @@ a {
 }
 .page-text-contd {
     margin-top: 20px;
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
@@ -504,7 +504,7 @@ a {
 }
 /*VOM PAGE*/
 .text-title {
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -519,7 +519,7 @@ a {
     margin-top: 0px;
 }
 .text-title-2 {
-    font-family: 'stevie sans', sans-serif;
+    font-family: 'stevie-sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
