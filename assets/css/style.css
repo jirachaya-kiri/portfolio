@@ -217,6 +217,9 @@ a {
     color: #371A2E;
     transition: 0.2s;
 }
+.nav-current-page {
+    opacity: .6;
+}
 .nav-item:hover {
     opacity: .6;
     transition: 0.2s;
@@ -275,6 +278,7 @@ a {
     margin-right: 50px;
     overflow: hidden;
     margin-bottom: 10px;
+    min-width: 308px;
 }
 .featured-proj-img:hover {
     filter: saturate(1.2);
@@ -427,6 +431,9 @@ a {
 #divide-final {
     background-color: #fff2ea;
 }
+#twitch-final {
+    background-color: #ebddff;
+}
 /* CITY PAGE */
 .page-flex {
     display: flex;
@@ -556,7 +563,7 @@ a {
     }
     a .featured-proj-img {
         width: 100%;
-        margin-right: 0;
+        margin-right: 20px;
         margin-left: 20px;
         
     }
@@ -582,6 +589,12 @@ a {
     }
     .text-section-rows {
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 955px) {
+    .tile-text {
+        margin-top: 20px;
+        max-width: 75%;
     }
 }
 
@@ -650,6 +663,7 @@ a {
     max-width: 100%;
     animation: fadeIn 0.2s 1;
     opacity: 95%;
+    transition: 0.2s;
 }
 .padding-top {
     padding-top: 30px;
