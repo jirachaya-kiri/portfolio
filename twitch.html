@@ -21,19 +21,18 @@
 </head>
 <body>
     <div id="divide-background">
-        <div id="navbar">
-            
+        <div id="navbar">   
             <div id="navbar-text">
                 <a href="index.html" class="nav-item">work</a>
-            <a href="play.html" class="nav-item">play</a>
-            <a href="about.html" class="nav-item">about</a>
-            <a href="assets/images/Dec 2021 Resume.pdf" class="nav-item" download>resume</a>
+                <a href="play.html" class="nav-item">play</a>
+                <a href="about.html" class="nav-item">about</a>
+                <a href="assets/images/Dec 2021 Resume.pdf" class="nav-item" download>resume</a>
             </div>    
         </div>
         <!--PAGE CONTENT-->
         <div class="page-flex">
-            <img class="top-vom-img" src="assets/images/twitch home.jpg" alt="Screens from Twitch project"/>
-            <p class="page-title">Twitch Internship</p>
+            <img class="top-vom-img" src="assets/images/work/twitch home.jpg" alt="Screens from Twitch project"/>
+            <p class="page-title">Twitch Internship (Amazon IVS)</p>
             <p class="page-tagline">Product design | React</p>
             <div class="text-section">
                 <p data-aos="fade-in" class="text-title">Overview</p>
@@ -48,25 +47,26 @@
                 </p>
                 <p data-aos="fade-in" class="text-title">Background</p>
                 <p data-aos="fade-in" class="text-title-2">Context</p>
-                <p data-aos="fade-in" class="page-text-contd">Twitch works using <strong>Amazon IVS</strong>, a live interactive video streaming service that also allows other companies to build and run their own live streaming platforms.
+                <p data-aos="fade-in" class="page-text-contd"><strong>Amazon IVS</strong> is a live interactive video streaming service that also allows other companies to build and run their own live streaming platforms.
                     The IVS Chat product, released earlier this year, is popular among our customers.
                     </p>
                 <p data-aos="fade-in" class="text-title-2">The Problem</p>
-                <p data-aos="fade-in" class="page-text-contd">Many customers want to use IVS to build <strong>bullet chat</strong>, a type of chat in which messages scroll across the screen rather than being contained on the side.
-                    However, it’s not immediately clear how IVS can be used to do so, design- or engineering-wise.
-                    </p>
+                <p data-aos="fade-in" class="page-text-contd">Many customers want to use IVS to build <strong>bullet chat</strong>, a type of chat in which messages scroll across the screen rather than being contained on the side, as pictured in the gifs below.</p>
+                <div class="page-flex text-section-rows img-row">
+                    <img data-aos="fade-in" class="text-page-img half-size" src="assets/images/bulletgif1.gif" alt="Example of bullet chat"/>
+                    <img data-aos="fade-in" class="text-page-img half-size" src="assets/images/bulletgif2.gif" alt="Another example of bullet chat"/>
+
+                </div>
+                <p data-aos="fade-in" class="page-text-contd">The problem is that it’s not immediately clear how IVS can be used to do implement this kind of chat, design-wise or engineering-wise.</p>
+                    
+                    
                 <p data-aos="fade-in" class="text-title-2">My Role</p>
                 <p data-aos="fade-in" class="page-text-contd">My project was to <strong>design, prototype, and build a bullet chat demo</strong> using IVS.
                     The outcome of this project was code published open source on github and a demo to be hosted on <a class="text-link" href="https://bulletchat.ivsdemos.com/">ivs.rocks</a>, which also hosts other demos created by my team. This is available for customers to use on their own, and to our sales team when they present to customers.
-                    
                     </p>
-                
-            </div>
-            <img data-aos="fade-in" class="text-page-img" src="assets/images/og vom.jpg" alt="Screenshots of the original website"/>
-            
-            <div data-aos="fade-in" class="text-section">
-                <p data-aos="fade-in" class="text-title" id="short-margin">Design process</p>
-                <p data-aos="fade-in" class="page-text-contd">Before starting, I did some research on existing bullet chat implementations on sites known for bullet chat like BiliBili and Niconico and also through extensions that add bullet chat to Youtube and Twitch.  
+
+                <p data-aos="fade-in" class="text-title">Design Process and Goals</p>
+                <p data-aos="fade-in" class="page-text-contd">Before starting, I did <strong>research on existing bullet chat implementations </strong>on sites known for bullet chat like BiliBili and Niconico. I also tried out extensions that add bullet chat to Youtube and Twitch.  
                     Once I started designing this demo, I had some constraints and goals in mind.</p>
                 <p data-aos="fade-in" class="page-text-contd">Overall, I was creating a responsive, self-contained bullet chat app demo that works on both desktop and mobile.</p>
                 <ul data-aos="fade-in" class="page-text-contd">
@@ -77,67 +77,61 @@
                 
                 <p data-aos="fade-in" class="text-title">Final Mockups</p>
 
-                <p data-aos="fade-in" class="page-text-contd">I made three key changes to achieve these goals.</p>
-                <p data-aos="fade-in" class="text-title-2">Combining and creating pages</p>
-                <p data-aos="fade-in" class="page-text-contd">The addition of a footer eliminates the need for a “Contact Us” page. Small or obscure pages like “CDs” and “Gifts-in-Kind” were also combined with other pages, while new pages like “Our Values” provided crucial information about accessibility and other topics.</p>
+                <p data-aos="fade-in" class="page-text-contd">I created mockups on figma and went through several rounds of design reviews with my team to get feedback and iterate on that feedback. These designs were my guide when coding the demo.</p>
+                <img data-aos="fade-in" class="text-page-img" src="assets/images/work/twitch mobile mocks 2.png" alt="Three mobile screen mockups: login, typing a message, and settings"/>
+                <img data-aos="fade-in" class="text-page-img" src="assets/images/work/twitch desktop mock 1.png" alt="Desktop mockup of login page"/>
+                <img data-aos="fade-in" class="text-page-img bottom-margin" src="assets/images/work/twitch desktop mock 2.png" alt="Desktop mockup showing open settings tab"/>
             </div> 
-            <div id="twitch-final" class="final-solution-section">
-                <div class="page-flex">
-                    <div data-aos="fade-in" class="text-section">    
-                        <p data-aos="fade-in" class="text-title">Final solution</p>
+            <div data-aos="fade-in" class="final-solution-section twitch-final">
+                    <div class="page-flex stretch-section">
+                        <div data-aos="fade-in" class="text-section">   
+                            <p data-aos="fade-in" class="text-title">Walkthrough</p>
+                            <p data-aos="fade-in" class="page-text-contd">Finally, I used React to code a working demo. Scroll to see it in action, or go to <a class="text-link" href="https://bulletchat.ivsdemos.com/">bulletchat.ivsdemos.com</a> to try it out yourself!</p>                  
+                        </div>
+                        <div data-aos="fade-in" class="text-section gifs"> 
+                            <div class="twitch-gif black-bg">
+                                <img class="text-page-img black-bg" src="assets/images/work/signin.gif" alt="Gif showing the process of typing in name, selecting an avatar, and clicking the Join Room button"/>
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Enter your name to join the room</p>
+
+                            <div data-aos="fade-in" class="twitch-gif gray-bg write-img">
+                                <img class="text-page-img" src="assets/images/work/write.gif" alt="Gif showing how messages are entered and scroll across the video"/>
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Type in and send bullet chats</p>
+
+                            <div data-aos="fade-in" class="twitch-gif gray-bg emojis-img">
+                                <img class="text-page-img" src="assets/images/work/emojis.gif" alt="Gif showing how clicking the emoji button sends randomized emojis across the video"/>
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Send emojis with the click of a button</p>
+
+                            <div data-aos="fade-in" class="twitch-gif gray-bg">
+                                <img class="text-page-img" src="assets/images/work/format.gif" alt="Gif showing toggling between normal and fancy messages to send text and emojis"/>
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Toggle between normal and fancy messages</p>
+
+                            <div data-aos="fade-in" class="twitch-gif gray-bg">
+                                <img class="text-page-img" src="assets/images/work/settings.gif" alt="Gif showing how adjusting settings changes the formatting and speed of messages on the screen"/>
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Adjust the settings of how you want messages to be displayed</p>
+                            
+                            <div data-aos="fade-in" class="twitch-gif white-bg resize-img">
+                                <img class="text-page-img" src="assets/images/work/resize.gif" alt="Gif showing responsiveness of demo"/>  
+                            </div>
+                            <p data-aos="fade-in" class="page-text">Resize your window and see the demo's responsiveness</p>
+                        </div>
+                        </div>
                     </div>
-                    <div data-aos="fade-in" class="text-section-rows align-center">
-                        <img data-aos="fade-in" class="single-screen" src="assets/images/divide begin popup.png" alt="Screen showing countdown timer on Instagram page, and screen with division problem prompts"/>
-                        <p data-aos="fade-in" class="page-text-contd">A countdown timer is constantly on the screen to remind users that a popup will soon appear. The popup tells the user how long they've been on the site, and presents a division problem.</p>
-                    </div>
-                    <div data-aos="fade-in" class="text-section-rows align-center">
-                        <img data-aos="fade-in" class="single-screen" src="assets/images/divide problem feedback.png" alt="Screens showing wrong answers and right answers"/>
-                        <p data-aos="fade-in" class="page-text-contd">Simple yet accessible visual cues provide feedback on whether or not the solution is correct, and the user can return to what they were doing.</p>
-                    </div>
-                    <img data-aos="fade-in" class="text-page-img" id="problem-sequence-margin" src="assets/images/divide problem sequence.png" alt="Four screens showing division problem popup, each with an additional problem and a darker shade of red background"/>
-                    <p data-aos="fade-in" class="page-text-contd">Each time the popup appears, it includes one addition division problem and is a darker shade of red. The longer users are on a site, the more they have to work to continue using it. This also stops them from becoming used to the level of inconvenience of the popup, since it takes longer to complete each time.</p>
-                    <div data-aos="fade-in" class="text-section-rows align-center">
-                        <img data-aos="fade-in" class="single-screen" src="assets/images/divide settings.png" alt="Screen showing settings, including place to add or delete new sites and edit time between popups"/>
-                        <p data-aos="fade-in" class="page-text-contd">Users can easily edit the list of sites that receive popups, including pausing popups on certain sites. They can also edit the amount of time between popups and other details.</p>
-                    </div>
-                    <div data-aos="fade-in" class="text-section-rows align-center">
-                        <img data-aos="fade-in" class="single-screen" src="assets/images/divide profile.png" alt="Screen showing profile and friends"/>
-                        <p data-aos="fade-in" class="page-text-contd">Users can add friends and view their friends' statistics. Under their own profile, they can also edit privacy settings if they don't want others to view their statistics.</p>
-                    </div>
-                    <div data-aos="fade-in" class="text-section-rows align-center">
-                        <img data-aos="fade-in" class="single-screen" src="assets/images/divide stats.png" alt="Screen showing statistics of site usage"/>
-                        <p data-aos="fade-in" class="page-text-contd">Users can view extensive statistics of their own time use, and compare it to that of their friends, recommended use, and the average of all users of this extension.</p>
-                    </div>
-                        
+
+                <div data-aos="fade-in" class="text-section">    
+                    <p data-aos="fade-in" class="text-title">Key Takeaways</p>
+                    <p data-aos="fade-in" class="text-title-2">👤 Always keep the user in mind</p>
+                    <p data-aos="fade-in" class="page-text-contd">Initially, I kept trying to design for the user of an actual bullet chat app. I later realized I should be designing for the <strong>users of this demo specifically</strong>—customer companies and their developers, who need to be able to picture themselves building something like this, and our sales team, who need to feel empowered to use the demo.</p>
+                    <p data-aos="fade-in" class="text-title-2">🐱 Stay curious</p>
+                    <p data-aos="fade-in" class="page-text-contd">I had never heard of bullet chat even though it’s huge in other countries and I find it to be a really engaging experience. I want to <strong>continue exploring</strong> to keep up with new trends and also learn about things that have been around but just haven’t been on my radar.</p>
+                    <p data-aos="fade-in" class="text-title-2">🏗️ Design doesn't end at the mockups</p>
+                    <p data-aos="fade-in" class="page-text-contd">This project was a good reminder that design goes beyond just making static mock ups and sending them to engineers. <strong>Interactivity</strong> is a big part of how it feels to use the product, and that’s found mainly in how the design is implemented. I’m happy I was able to go from envisioning something to fully realizing it and publishing it</p>
                 </div>
             </div>
-            <div data-aos="fade-in" class="text-section">
-                <p data-aos="fade-in" class="text-title-2">Home page layout</p>
-                <p data-aos="fade-in" class="page-text-contd">Tiles that span the entire page width help focus users on different topics rather than forcing the eye to jump around the page. The topmost tile also emphasizes concerts and gives users a more appealing image of what the experience will be like.</p>
-                
-                <p data-aos="fade-in" class="text-title">Walkthrough</p>
-                <p data-aos="fade-in" class="page-text-contd">Or go to <a class="text-link" href="https://bulletchat.ivsdemos.com/">bulletchat.ivsdemos.com</a> to try it out yourself!</p>
-            </div>
-            <img data-aos="fade-in" class="text-page-img" src="assets/images/low fi paper.jpg" alt="Low-fidelity page sketches"/>
-            
-            <div data-aos="fade-in" class="text-section">
-                <p data-aos="fade-in" class="text-title">Development</p>
-                <p data-aos="fade-in" class="text-title-2">Low-fidelity</p>
-                <p data-aos="fade-in" class="page-text-contd">My focus with the project was more on functionality, so I did not try to rebrand their website. Rather, I wanted to make it easy to scan and read. I gave all pages the standard format of a banner image followed by a centered column of text. Keeping their dark mode aesthetics, I chose a gray for the text that would be easier on the eyes, and adjusted font size and spacing so that long text would not be as overwhelming.</p>
-            </div>
-            <img data-aos="fade-in" class="text-page-img" src="assets/images/low fi figma.jpg" alt="Wireframes of various pages"/>
-            
-            <div data-aos="fade-in" class="text-section">    
-                <p data-aos="fade-in" class="text-title">Key Takeaways</p>
-                <p data-aos="fade-in" class="text-title-2">👤 Always keep the user in mind</p>
-                <p data-aos="fade-in" class="page-text-contd">Initially, I kept trying to design for the user of an actual bullet chat app, but I later realized I should be designing it for the specific users of this demo—customer companies and their developers, who need to be able to picture themselves building something like this, and our sales team, who need to feel empowered to use the demo.</p>
-                <p data-aos="fade-in" class="text-title-2">🐱 Stay curious</p>
-                <p data-aos="fade-in" class="page-text-contd">I had never heard of bullet chat even though it’s huge in other countries and I find it to be a really engaging experience. I want to continue exploring to keep up with new trends and also learn about things that have been around for a while but just haven’t been on my radar.</p>
-                <p data-aos="fade-in" class="text-title-2">🏗️ Design doesn't end at the mockups</p>
-                <p data-aos="fade-in" class="page-text-contd">This project was a good reminder that design goes beyond just making static mock ups and sending them to engineers. Interactivity is a big part of how it feels to use the product, and that’s found mainly in how the design is implemented. I’m happy I was able to go from envisioning something to fully realizing it and publishing it</p>
-            </div>
-             
-        </div>
         <!--BOTTOM BAR-->
         <div id="bottom-bar">
             <div id="home-bottom-bar-background">

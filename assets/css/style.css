@@ -146,7 +146,7 @@ h3 {
     font-weight: 300;
     font-size: 14px;
     line-height: 1;
-    color: #8b7c85; 
+    color: #a18d99; 
 }
 .caption-text {
     font-size: 16px;
@@ -237,7 +237,7 @@ a {
 
 #tagline {
     font-family: 'stevie-sans', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 20px;
     color: black;
     z-index: 4;
@@ -431,15 +431,13 @@ a {
 #divide-final {
     background-color: #fff2ea;
 }
-#twitch-final {
-    background-color: #ebddff;
-}
+
 /* CITY PAGE */
 .page-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 .page-title {
     font-family: 'cormorant-garamond', serif;
@@ -519,7 +517,7 @@ a {
     line-height: 1;
     margin-bottom: 0;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 #short-margin {
@@ -534,14 +532,21 @@ a {
     line-height: 1.2;
     margin-bottom: 0;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .text-page-img {
     width: 700px;
     margin-top: 40px;
     max-width: 100%;
     height: 100%;
-
+}
+.half-size {
+    max-height: 190px;
+    height: 100%;
+    margin-top: 30px;
+}
+.bottom-margin {
+    margin-bottom: 30px;
 }
 .full-page-img {
     width: 700px;
@@ -613,6 +618,13 @@ a {
     margin-bottom: -40px;
     max-width: 100%;
 }
+.stretch-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
 .text-section {
     display: flex;
     flex-direction: column;
@@ -630,6 +642,7 @@ a {
     max-width: 90%;
     flex-wrap: none;
 }
+
 .third {
     width: 230px;
 }
@@ -654,6 +667,59 @@ a {
 .text-link:hover {
     text-decoration: underline;
     transition: 0.2s;
+}
+/* TWITCH PAGE */
+.img-row {
+    flex-basis: auto;
+    margin-bottom: 10px;
+    justify-content: top;
+}
+.twitch-final {
+    background-color: #ebddff;
+}
+.gifs p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.twitch-final img {
+    width: 570px;
+    height: 100%;
+    margin-top: 0px;
+}
+.twitch-gif {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.top-margin {
+    padding-top: 50px;
+}
+.resize {
+    padding: 0;
+    background-color: none;
+}
+.black-bg {
+    background-color: #0C0C0E;
+}
+.gray-bg {
+    background-color: #16171B;
+} 
+.white-bg {
+    background-color: #F7F8F8;
+    padding-bottom: 60px;
+}
+.write-img {
+    padding-bottom: 0px;
+}
+.emojis-img {
+    padding-bottom: 0px;
+}
+.resize-img {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* ABOUT PAGE */
