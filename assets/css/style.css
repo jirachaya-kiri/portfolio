@@ -415,17 +415,17 @@ a {
 }
 #sleepy-final {
     background-color: #fcfaf5;
-    margin-bottom: -60px;
+    margin-bottom: -80px;
     padding-bottom: 50px;
 }
 #finance-final {
     background-color: #c6d4ee;
-    margin-bottom: -60px;
+    margin-bottom: -80px;
     padding-bottom: 50px;
 }
 #filmfest-final {
     background-color: #202020;
-    margin-bottom: -60px;
+    margin-bottom: -80px;
     padding-bottom: 50px;
 }
 #divide-final {
@@ -675,7 +675,7 @@ a {
     justify-content: top;
 }
 .twitch-final {
-    background-color: #ebddff;
+    background-color: #f3eaff;
 }
 .gifs p {
     text-align: center;
