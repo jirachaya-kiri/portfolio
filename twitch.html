@@ -23,10 +23,10 @@
     <div id="divide-background">
         <div id="navbar">   
             <div id="navbar-text">
-                <a href="index.html" class="nav-item">work</a>
-                <a href="play.html" class="nav-item">play</a>
-                <a href="about.html" class="nav-item">about</a>
-                <a href="assets/images/Dec 2021 Resume.pdf" class="nav-item" download>resume</a>
+                <a href="index.html" class="nav-item button">work</a>
+                <a href="play.html" class="nav-item button">play</a>
+                <a href="about.html" class="nav-item button">about</a>
+                <a href="assets/images/Dec 2021 Resume.pdf" class="nav-item button" download>resume</a>
             </div>    
         </div>
         <!--PAGE CONTENT-->
@@ -83,55 +83,79 @@
                 <img data-aos="fade-in" class="text-page-img bottom-margin" src="assets/images/work/twitch desktop mock 2.png" alt="Desktop mockup showing open settings tab"/>
             </div> 
             <div data-aos="fade-in" class="final-solution-section twitch-final">
-                    <div class="page-flex stretch-section">
-                        <div data-aos="fade-in" class="text-section">   
-                            <p data-aos="fade-in" class="text-title">Walkthrough</p>
-                            <p data-aos="fade-in" class="page-text-contd">Finally, I used React to code a working demo. Scroll to see it in action, or go to <a class="text-link" href="https://bulletchat.ivsdemos.com/">bulletchat.ivsdemos.com</a> to try it out yourself!</p>                  
-                        </div>
-                        <div data-aos="fade-in" class="text-section gifs"> 
-                            <div class="twitch-gif black-bg">
-                                <img class="text-page-img black-bg" src="assets/images/work/signin.gif" alt="Gif showing the process of typing in name, selecting an avatar, and clicking the Join Room button"/>
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Enter your name to join the room</p>
-
-                            <div data-aos="fade-in" class="twitch-gif gray-bg write-img">
-                                <img class="text-page-img" src="assets/images/work/write.gif" alt="Gif showing how messages are entered and scroll across the video"/>
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Type in and send bullet chats</p>
-
-                            <div data-aos="fade-in" class="twitch-gif gray-bg emojis-img">
-                                <img class="text-page-img" src="assets/images/work/emojis.gif" alt="Gif showing how clicking the emoji button sends randomized emojis across the video"/>
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Send emojis with the click of a button</p>
-
-                            <div data-aos="fade-in" class="twitch-gif gray-bg">
-                                <img class="text-page-img" src="assets/images/work/format.gif" alt="Gif showing toggling between normal and fancy messages to send text and emojis"/>
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Toggle between normal and fancy messages</p>
-
-                            <div data-aos="fade-in" class="twitch-gif gray-bg">
-                                <img class="text-page-img" src="assets/images/work/settings.gif" alt="Gif showing how adjusting settings changes the formatting and speed of messages on the screen"/>
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Adjust the settings of how you want messages to be displayed</p>
-                            
-                            <div data-aos="fade-in" class="twitch-gif white-bg resize-img">
-                                <img class="text-page-img" src="assets/images/work/resize.gif" alt="Gif showing responsiveness of demo"/>  
-                            </div>
-                            <p data-aos="fade-in" class="page-text">Resize your window and see the demo's responsiveness</p>
-                        </div>
-                        </div>
+                <div class="page-flex stretch-section">
+                    <div data-aos="fade-in" class="text-section">   
+                        <p data-aos="fade-in" class="text-title">Walkthrough</p>
+                        <p data-aos="fade-in" class="page-text-contd">Finally, I used React to code a working demo. Scroll to see it in action, or go to <a class="text-link" href="https://bulletchat.ivsdemos.com/">bulletchat.ivsdemos.com</a> to try it out yourself!</p>                  
                     </div>
 
-                <div data-aos="fade-in" class="text-section">    
-                    <p data-aos="fade-in" class="text-title">Key Takeaways</p>
-                    <p data-aos="fade-in" class="text-title-2">👤 Always keep the user in mind</p>
-                    <p data-aos="fade-in" class="page-text-contd">Initially, I kept trying to design for the user of an actual bullet chat app. I later realized I should be designing for the <strong>users of this demo specifically</strong>—customer companies and their developers, who need to be able to picture themselves building something like this, and our sales team, who need to feel empowered to use the demo.</p>
-                    <p data-aos="fade-in" class="text-title-2">🐱 Stay curious</p>
-                    <p data-aos="fade-in" class="page-text-contd">I had never heard of bullet chat even though it’s huge in other countries and I find it to be a really engaging experience. I want to <strong>continue exploring</strong> to keep up with new trends and also learn about things that have been around but just haven’t been on my radar.</p>
-                    <p data-aos="fade-in" class="text-title-2">🏗️ Design doesn't end at the mockups</p>
-                    <p data-aos="fade-in" class="page-text-contd">This project was a good reminder that design goes beyond just making static mock ups and sending them to engineers. <strong>Interactivity</strong> is a big part of how it feels to use the product, and that’s found mainly in how the design is implemented. I’m happy I was able to go from envisioning something to fully realizing it and publishing it</p>
+                    <div data-aos="fade-in" class="text-section gifs"> 
+                            
+                        <!-- SIGN-IN -->
+                        <div class="twitch-gif black-bg signin-img" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/signin.webm" alt="Video showing the process of typing in name, selecting an avatar, and clicking the Join Room button"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Enter your name to join the room</p>
+
+                        <!-- WRITE -->          
+                        <div class="twitch-gif gray-bg write-img" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/write.webm" alt="Video showing how messages are entered and scroll across the video"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Type in and send bullet chats</p>
+
+                        <!-- EMOJIS -->
+                        <div class="twitch-gif gray-bg emojis-img" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/emojis.webm" alt="Video showing how clicking the emoji button sends randomized emojis across the video"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Send emojis with the click of a button</p>
+
+                        <!-- FORMAT -->
+                        <div class="twitch-gif gray-bg" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/format.webm" alt="Video showing toggling between normal and fancy messages to send text and emojis"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Toggle between normal and fancy messages</p>
+
+                        <!-- SETTINGS -->
+                        <div class="twitch-gif gray-bg" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/settings.webm" alt="Video showing how adjusting settings changes the formatting and speed of messages on the screen"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Adjust the settings of how you want messages to be displayed</p>
+                        
+                        <!-- RESIZE -->
+                        <div class="twitch-gif white-bg resize-gif" data-aos="fade-in">
+                            <video class="twitch-vid" width="" autoplay loop muted>
+                                <source src="assets/images/work/resize.webm" alt="Video showing how adjusting settings changes the formatting and speed of messages on the screen"/>
+                            </video> 
+                        </div>
+                        <p data-aos="fade-in" class="page-text">Resize your window and see the demo's responsiveness</p>
+                    </div>
                 </div>
             </div>
+
+            <div data-aos="fade-in" class="text-section">    
+                <p data-aos="fade-in" class="text-title">Key Takeaways</p>
+                <p data-aos="fade-in" class="text-title-2">👤 Always keep the user in mind</p>
+                <p data-aos="fade-in" class="page-text-contd">Initially, I kept trying to design for the user of an actual bullet chat app. I later realized I should be designing for the <strong>users of this demo specifically</strong>—customer companies and their developers, who need to be able to picture themselves building something like this, and our sales team, who need to feel empowered to use the demo.</p>
+                <p data-aos="fade-in" class="text-title-2">🐱 Stay curious</p>
+                <p data-aos="fade-in" class="page-text-contd">I had never heard of bullet chat even though it’s huge in other countries and I find it to be a really engaging experience. I want to <strong>continue exploring</strong> to keep up with new trends and also learn about things that have been around but just haven’t been on my radar.</p>
+                <p data-aos="fade-in" class="text-title-2">🏗️ Design doesn't end at the mockups</p>
+                <p data-aos="fade-in" class="page-text-contd">This project was a good reminder that design goes beyond just making static mock ups and sending them to engineers. <strong>Interactivity</strong> is a big part of how it feels to use the product, and that’s found mainly in how the design is implemented. I’m happy I was able to go from envisioning something to fully realizing it and publishing it</p>
+            </div>
+        </div>
+        <div class="back-div">
+            <a href="index.html" class="button">return to work</a>
+            <a href="gig.html" class="button">next : gig carshare >></a>
+        </div>
         <!--BOTTOM BAR-->
         <div id="bottom-bar">
             <div id="home-bottom-bar-background">
