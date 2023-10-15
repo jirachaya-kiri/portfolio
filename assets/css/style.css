@@ -325,6 +325,7 @@ a {
     vertical-align: top;
     position: relative;
     max-width: 100%;
+    z-index: -1;
 }
 #bottom-bar-background {
     min-width: 100vw;
@@ -338,6 +339,7 @@ a {
     right: 0;
     max-width: 100%;
     background-color: #ffddbd;
+    z-index: 0;
 }
 #home-bottom-bar-background {
     min-width: 100vw;
@@ -394,6 +396,8 @@ a {
     width: 100%;
     background-color: white;
     margin: 0;
+    position: absolute;
+    z-index: -2;
 }
 #divide-page-container {
     display: flex;
@@ -493,6 +497,8 @@ a {
     width: 335px;
     margin: 30px;
 }
+
+
 /* ART PAGE */
 .art-tiles-container {
     margin-top: 50px;
@@ -507,6 +513,66 @@ a {
 #art {
     margin-top: 100px;
 }
+
+.city-tile:hover {
+    opacity: 0.9 !important;
+    cursor: pointer;
+    transition: 0.05s;
+
+}
+#lightbox-overlay {
+    transition: 0.1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+.lightbox {
+    transition: 0.1s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60vw;
+    max-height: 90vh;
+}
+.lightbox img {
+    transition: 0.1s;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.hidden {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.1s ease-in;
+}
+@media screen and (max-width: 1270px) {
+    .art-tiles-container {
+        max-width: 100vw;
+        max-height: none;
+        height: unset;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .city-tile {
+        max-width: 90vw;
+        margin: 0 0 15px 0;
+    }
+    .lightbox {
+        transition: 0.1s;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 85vw;
+        max-height: 80vh;
+    }
+}
+
 /*VOM PAGE*/
 .text-title {
     font-family: 'stevie-sans', sans-serif;
@@ -640,7 +706,7 @@ a {
     gap: 5%;
     width: 700px;
     max-width: 90%;
-    flex-wrap: none;
+    flex-wrap: nowrap;
 }
 
 .third {
@@ -655,7 +721,7 @@ a {
     gap: 5%;
     width: 1000px;
     max-width: 90%;
-    flex-wrap: none;
+    flex-wrap: nowrap;
 }
 .align-center {
     align-items: center;
@@ -672,7 +738,7 @@ a {
 .img-row {
     flex-basis: auto;
     margin-bottom: 10px;
-    justify-content: top;
+    justify-content: flex-start;
 }
 .twitch-final {
     background-color: #f3eaff;
@@ -694,12 +760,16 @@ a {
     margin-top: 50px;
     padding-bottom: 20px;
 }
+.twitch-vid {
+    width: 700px;
+    max-width: 100%;
+    height: 100%;
+}
 .top-margin {
     padding-top: 50px;
 }
 .resize {
     padding: 0;
-    background-color: none;
 }
 .black-bg {
     background-color: #0C0C0E;
@@ -734,9 +804,7 @@ a {
 .padding-top {
     padding-top: 30px;
 }
-.hidden {
-    display: none;
-}
+
 
 @keyframes fadeIn {
     0% {opacity: 0;}

@@ -36,25 +36,41 @@
         <p class="page-tagline">Some drawings and paintings :)</p>
         <!-- <p class="page-text">A few things I've made.</p> -->
         <div class="art-tiles-container">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/acrylic.jpg" alt="Acrylic painting of a dog">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/plant.png" alt="Digital illustration of a nepenthes with a smiling face">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/tree.jpg" alt="Digital illustration of a tree in a field">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/poppies.jpg" alt="Digital illustration of golden poppies in front of a field">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/isocat.jpg" alt="Digital isometric illustration of a cat sleeping in a room">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/acrylic.jpg" onclick="unhideLightbox(this);" alt="Acrylic painting of a dog">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/plant.png" onclick="unhideLightbox(this);" alt="Digital illustration of a nepenthes with a smiling face">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/tree.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of a tree in a field">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/poppies.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of golden poppies in front of a field">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/isocat.jpg" onclick="unhideLightbox(this);" alt="Digital isometric illustration of a cat sleeping in a room">
             
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/stilllife.jpg" alt="Digital still life painting">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/lock.jpg" alt="Acrylic painting of a clear lock with lockpicks in it">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/purple field.jpg" alt="Digital illustration of a field of yellow and red flowers">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/violas.jpg" alt="Digital illustration of violas tied with ribbon">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/snowy.jpg" alt="Digital illustration of a house in a snowy scene">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/stilllife.jpg" onclick="unhideLightbox(this);" alt="Digital still life painting">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/lock.jpg" onclick="unhideLightbox(this);" alt="Acrylic painting of a clear lock with lockpicks in it">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/purple field.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of a field of yellow and red flowers">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/violas.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of violas tied with ribbon">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/snowy.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of a house in a snowy scene">
             
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/skunks.jpg" alt="Digital illustration of a person sitting on a throne surrounded by skunks and trash">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/frogs.jpg" alt="Digital illustration of frogs and fireflies">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/mushrooms.jpg" alt="Digital illustration of pink mushrooms">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/ghost shower.png" alt="Digital illustration of cartoon ghosts in a communal shower">
-            <img data-aos="fade-in" class="city-tile" src="assets/images/play/sneezecat.jpg" alt="Digital illustration of a sneezing cat">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/skunks.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of a person sitting on a throne surrounded by skunks and trash">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/frogs.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of frogs and fireflies">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/mushrooms.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of pink mushrooms">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/ghost shower.png" onclick="unhideLightbox(this);" alt="Digital illustration of cartoon ghosts in a communal shower">
+            <img data-aos="fade-in" class="city-tile" src="assets/images/play/sneezecat.jpg" onclick="unhideLightbox(this);" alt="Digital illustration of a sneezing cat">
         </div>
+
+        <div id="lightbox-overlay" class="hidden">
+            <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+            <img class="lightbox" id="expandedImg" alt="">
+
+        </div>
+
+        <!-- lightbox pop-up elements that are hidden using a css class -->
+        <img class="lightbox hidden" id="big-acrylic" src="assets/images/play/acrylic.jpg" alt="">
+        <img class="lightbox hidden" id="big-plant" src="assets/images/play/plant.png" alt="">
+        <img class="lightbox hidden" id="big-tree" src="assets/images/play/tree.jpg" alt="">
+        <img class="lightbox hidden" id="big-lock" src="assets/images/play/lock.jpg" alt="">
+        
     </div>
+    <!-- full-screen overlay for lightbox -->
+    
+
         <!--BOTTOM BAR-->
         <div id="bottom-bar">
             <div id="home-bottom-bar-background">
