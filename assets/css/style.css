@@ -210,6 +210,10 @@ strong {
 }
 a {
     text-decoration: none;
+    color:rgb(77, 147, 204);
+}
+a:hover {
+    text-decoration: underline;
 }
 
 #background-images {
